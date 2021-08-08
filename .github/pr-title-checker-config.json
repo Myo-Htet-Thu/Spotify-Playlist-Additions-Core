@@ -4,6 +4,7 @@
       "color": "EEEEEE"
     },
     "CHECKS": {
-      "prefixes": ["[MAJOR]", "[MINOR]", "[PATCH]"]
+      "prefixes": ["[MAJOR]", "[MINOR]", "[PATCH]"],
+      "regex": ["*"]
     }
   }
