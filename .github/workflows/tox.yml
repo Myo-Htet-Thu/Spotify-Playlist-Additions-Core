@@ -1,7 +1,7 @@
 name: Tox
 
 on:
-  - push
+  # - push
   - pull_request
 
 jobs:
