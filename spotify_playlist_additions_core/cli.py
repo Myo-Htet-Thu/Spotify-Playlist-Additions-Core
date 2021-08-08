@@ -3,7 +3,7 @@ import argparse
 import sys
 
 
-def main()->int:
+def main() -> int:
     """Console script for spotify_playlist_additions_core."""
     parser = argparse.ArgumentParser()
     parser.add_argument('_', nargs='*')
