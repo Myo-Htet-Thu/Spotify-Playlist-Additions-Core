@@ -5,7 +5,7 @@ on:
 
 jobs:
   steps:
-  - uses: actions/checkout@v2
+  - uses: actions/checkout@v1
 
   - name: Verify CHANGELOG is changed
     uses: tj-actions/verify-changed-files@v7.1
