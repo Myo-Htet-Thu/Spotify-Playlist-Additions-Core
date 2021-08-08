@@ -1,14 +1,7 @@
 name: Sanity Checks
 
 on:
-  pull_request:
-    types:
-      # Check title when opened.
-      - opened
-      # Check title when new commits are pushed.
-      # Required to use as a status check.
-      - synchronize
-
+  pull_request
 
 jobs:
   Changelog:
@@ -31,6 +24,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Check the PR title is correct
-      uses: Slashgear/action-check-pr-title@v1.0.0
-      with:
-        regexp: '.*(\[MAJOR\]|\[MINOR\]|\[PATCH\]).*' # Regex the title should match.
+      uses: thehanimo/pr-title-checker@v1.2
