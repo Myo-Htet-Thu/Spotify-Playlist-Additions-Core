@@ -96,3 +96,9 @@ check-types:  ## Does static type checking on the code
 
 show-types: check-types ## Shows the type checking report after running the type checker
 	$(BROWSER) .mypyreport/index.html
+
+style:  ## styles all code with yapf - google auto styling
+	yapf -irp --style pep8 tests spotify_playlist_additions
+
+check-style:  ## Tests that the style is consistent
+	yapf -rd --style pep8 tests spotify_playlist_additions

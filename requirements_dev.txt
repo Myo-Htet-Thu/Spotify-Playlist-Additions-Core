@@ -10,5 +10,6 @@ mkdocs
 mkdocs-material
 mkdocs-minify-plugin
 mypy
+yapf
 
-pytest==6.2.4
+pytest
