@@ -1,7 +1,14 @@
 name: Sanity Checks for PRs
 
 on:
-  - pull_request
+  pull_request:
+    types:
+      # Check title when opened.
+      - opened
+      # Check title when new commits are pushed.
+      # Required to use as a status check.
+      - synchronize
+
 
 jobs:
   Changelog:
