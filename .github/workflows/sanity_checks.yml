@@ -24,6 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Check the PR title is correct
-      uses: thehanimo/pr-title-checker@v1.2
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: dylanvann/check-pull-request-title@v1
+        with:
+          # Match pull request titles in the form UI-1234 - Message.
+          pattern: '.*(\[MAJOR\]|\[MINOR\]|\[PATCH\]).*'
