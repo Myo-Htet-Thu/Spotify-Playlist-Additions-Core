@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Check the PR title is correct
-      uses: dylanvann/check-pull-request-title@v1
+      uses: dylanvann/check-pull-request-title@v0.1.14
       with:
         # Match pull request titles in the form UI-1234 - Message.
         pattern: '.*(\[MAJOR\]|\[MINOR\]|\[PATCH\]).*'
