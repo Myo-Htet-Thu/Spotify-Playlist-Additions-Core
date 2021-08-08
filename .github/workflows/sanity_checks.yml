@@ -4,8 +4,9 @@ on:
   - pull_request
 
 jobs:
-  build:
+  Changelog:
     runs-on: ubuntu-latest
+    name: Check CHANGELOG
 
     steps:
     - uses: actions/checkout@v2
@@ -16,6 +17,12 @@ jobs:
       with:
         files: CHANGELOG.md
 
+  PR-Name:
+    runs-on: ubuntu-latest
+    name: PR name
+
+    steps:
+    - uses: actions/checkout@v2
     - name: Check the PR title is correct
       uses: Slashgear/action-check-pr-title@1.0.0
       with:
