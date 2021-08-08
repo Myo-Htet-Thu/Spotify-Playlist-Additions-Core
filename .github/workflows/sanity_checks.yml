@@ -1,8 +1,7 @@
-name: Sanity Checks
+name: Sanity Checks for PRs
 
 on:
   - pull_request
-  - push
 
 jobs:
   steps:
@@ -13,3 +12,8 @@ jobs:
     id: verify-changed-files
     with:
       files: CHANGELOG.md
+
+  - name: Check the PR title is correct
+    uses: Slashgear/action-check-pr-title@1.0.0
+    with:
+      regex: '[MAJOR]|[MINOR]|[PATCH]' # Regex the title should match.
