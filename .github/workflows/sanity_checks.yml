@@ -33,4 +33,4 @@ jobs:
     - name: Check the PR title is correct
       uses: dylanvann/check-pull-request-title@v0.1.14
       with:
-        regex: '*(MAJOR|MINOR|PATCH)*' # Regex the title should match.
+        regex: .*(\[MAJOR\]|\[MINOR\]|\[PATCH\]).* # Regex the title should match.
