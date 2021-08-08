@@ -4,16 +4,19 @@ on:
   - pull_request
 
 jobs:
-  steps:
-  - uses: actions/checkout@v1
+  build:
+    runs-on: ubuntu-latest
 
-  - name: Verify CHANGELOG is changed
-    uses: tj-actions/verify-changed-files@v7.1
-    id: verify-changed-files
-    with:
-      files: CHANGELOG.md
+    steps:
+    - uses: actions/checkout@v2
 
-  - name: Check the PR title is correct
-    uses: Slashgear/action-check-pr-title@1.0.0
-    with:
-      regex: '[MAJOR]|[MINOR]|[PATCH]' # Regex the title should match.
+    - name: Verify CHANGELOG is changed
+      uses: tj-actions/verify-changed-files@v7.1
+      id: verify-changed-files
+      with:
+        files: CHANGELOG.md
+
+    - name: Check the PR title is correct
+      uses: Slashgear/action-check-pr-title@1.0.0
+      with:
+        regex: '[MAJOR]|[MINOR]|[PATCH]' # Regex the title should match.
