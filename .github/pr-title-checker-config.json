@@ -4,8 +4,6 @@
       "color": "EEEEEE"
     },
     "CHECKS": {
-      "prefixes": ["[MAJOR]", "[MINOR]", "[PATCH]"],
-      "regexp": "*",
-      "ignoreLabels" : []
+      "prefixes": ["[MAJOR]", "[MINOR]", "[PATCH]"]
     }
   }
