@@ -11,5 +11,6 @@ mkdocs-material
 mkdocs-minify-plugin
 mypy
 yapf
+build
 
 pytest

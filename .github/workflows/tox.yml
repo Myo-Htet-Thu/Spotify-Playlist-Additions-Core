@@ -23,6 +23,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install tox tox-gh-actions
-        apt-get install -y gcc libpq-dev python3-wheel python3-dev
+        sudo apt-get install -y gcc libpq-dev python3-wheel python3-dev
     - name: Test with tox
       run: tox
