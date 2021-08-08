@@ -1,7 +1,10 @@
 name: Tox
 
 on:
-  # - push
+  - push:
+      branches:
+        - master
+        - develop
   - pull_request
 
 jobs:
