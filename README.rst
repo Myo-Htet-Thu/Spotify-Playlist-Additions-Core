@@ -14,8 +14,8 @@ Spotify Playlist Additions Core
         :alt: Documentation Status
 
 
-.. image:: https://pyup.io/repos/github/prchristie/spotify_playlist_additions_core/shield.svg
-     :target: https://pyup.io/repos/github/prchristie/spotify_playlist_additions_core/
+.. image:: https://pyup.io/account/repos/github/prchristie/Spotify-Playlist-Additions-Core/shield.svg
+     :target: https://pyup.io/account/repos/github/prchristie/Spotify-Playlist-Additions-Core/
      :alt: Updates
 
 
