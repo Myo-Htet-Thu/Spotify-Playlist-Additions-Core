@@ -24,6 +24,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Check the PR title is correct
-      uses: Slashgear/action-check-pr-title@1.0.0
+      uses: dylanvann/check-pull-request-title@v1
       with:
         regex: '[MAJOR]|[MINOR]|[PATCH]' # Regex the title should match.
