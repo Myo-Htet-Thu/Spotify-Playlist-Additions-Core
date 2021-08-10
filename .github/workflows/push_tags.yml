@@ -20,8 +20,6 @@ jobs:
     - name: Bump Version
       run: |
         ./.github/bumpversion.sh
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     # - name: Push changes
     #   uses: ad-m/github-push-action@master
