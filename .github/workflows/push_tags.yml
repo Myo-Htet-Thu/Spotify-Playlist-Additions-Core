@@ -19,7 +19,7 @@ jobs:
         pip install bump2version
     - name: Bump Version
       env:
-        GITHUB_TOKEN: secret.PERSONAL_PUSH_TOKEN
+        GITHUB_TOKEN: ${{ secret.PERSONAL_PUSH_TOKEN }}
       run: .github/bumpversion.sh
       shell: bash
 
