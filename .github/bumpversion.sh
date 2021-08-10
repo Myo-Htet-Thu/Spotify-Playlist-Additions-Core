@@ -1,6 +1,6 @@
 git pull
 
-last_merged_branch=$(git log --merges -n 1 develop)
+last_merged_branch=$(git log --merges -n 1)
 branch_name="${last_merged_branch##*$'\n'}"
 
 echo "Detected branch name '$branch_name'"
