@@ -1,0 +1,10 @@
+{
+    "LABEL": {
+      "name": "Semver PR Name",
+      "color": "EEEEEE"
+    },
+    "CHECKS": {
+      "prefixes": ["[MAJOR]", "[MINOR]", "[PATCH]", "[IGNORE]"],
+      "regex": ["*"]
+    }
+}

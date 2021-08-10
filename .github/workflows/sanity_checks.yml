@@ -1,0 +1,29 @@
+name: Sanity Checks
+
+on:
+  pull_request
+
+jobs:
+  Changelog:
+    runs-on: ubuntu-latest
+    name: Check CHANGELOG
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Verify CHANGELOG is changed
+      uses: tj-actions/verify-changed-files@v7.1
+      id: verify-changed-files
+      with:
+        files: CHANGELOG.md
+
+  PR-Name:
+    runs-on: ubuntu-latest
+    name: PR name
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Check the PR title is correct
+      uses: thehanimo/pr-title-checker@v1.2
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

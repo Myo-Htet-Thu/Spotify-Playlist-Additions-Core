@@ -48,7 +48,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 spotify_playlist_additions_core tests
+	flake8 spotify_playlist_additions_core
 
 test: ## run tests quickly with the default Python
 	pytest
@@ -76,9 +76,7 @@ release: dist ## package and upload a release
 	twine upload dist/*
 
 dist: clean ## builds source and wheel package
-	python setup.py sdist
-	python setup.py bdist_wheel
-	ls -l dist
+	python -m build
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
@@ -96,3 +94,9 @@ check-types:  ## Does static type checking on the code
 
 show-types: check-types ## Shows the type checking report after running the type checker
 	$(BROWSER) .mypyreport/index.html
+
+style:  ## styles all code with yapf - google auto styling
+	yapf -irp --style pep8 tests spotify_playlist_additions
+
+check-style:  ## Tests that the style is consistent
+	yapf -rd --style pep8 tests spotify_playlist_additions

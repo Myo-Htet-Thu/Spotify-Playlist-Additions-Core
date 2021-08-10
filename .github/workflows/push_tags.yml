@@ -1,0 +1,25 @@
+name: Automatic version bumping
+
+on:
+  - push:
+      branches:
+        - develop
+
+jobs:
+  Bump-Version:
+    runs-on: ubuntu-latest
+    name: Bump Version
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Bump Version
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        ./.github/bumpversion.sh
+
+    - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tags: true

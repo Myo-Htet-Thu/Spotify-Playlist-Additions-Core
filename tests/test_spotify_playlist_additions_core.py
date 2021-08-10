@@ -1,9 +1,7 @@
 #!/usr/bin/env python
-
 """Tests for `spotify_playlist_additions_core` package."""
 
 import pytest
-
 
 from spotify_playlist_additions_core import spotify_playlist_additions_core
 
