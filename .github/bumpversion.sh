@@ -19,4 +19,4 @@ case "$branch_name" in
         echo "Ignoring"; exit;;
 esac
 
-git push
+git push origin HEAD:develop
