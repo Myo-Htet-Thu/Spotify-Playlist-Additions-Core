@@ -18,6 +18,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install bump2version
     - name: Bump Version
+      env:
+        GITHUB_TOKEN: secret.GITHUB_TOKEN
       run: .github/bumpversion.sh
       shell: bash
 
