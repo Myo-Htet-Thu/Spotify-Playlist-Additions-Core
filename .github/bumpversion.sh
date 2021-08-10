@@ -4,8 +4,12 @@ branch_name="${last_merged_branch##*$'\n'}"
 echo "Detected branch name '$branch_name'"
 
 case "$branch_name" in
-    *[IGNORE]* ) echo "Ignoring" && exit;;
-    *[MAJOR]* ) bump2version major;;
-    *[MAJOR]* ) bump2version minor;;
-    *[MAJOR]* ) bump2version patch;;
+    *[MAJOR]*)
+        echo "Detected MAJOR"; bump2version major;;
+    *[MINOR]*)
+        echo "Detected MINOR"; bump2version minor;;
+    *[PATCH]*)
+        echo "Detected PATCH"; bump2version patch;;
+    *[IGNORE]*)
+        echo "Ignoring"; exit;;
 esac
