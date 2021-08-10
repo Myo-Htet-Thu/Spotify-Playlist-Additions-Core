@@ -1,0 +1,17 @@
+name: Automatic version bumping
+
+on:
+  - push:
+      branches:
+        - develop
+
+jobs:
+  Bump-Version:
+    runs-on: ubuntu-latest
+    name: Bump Version
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Bump Version
+      run: |
+        ./.github/bumpversion.sh
