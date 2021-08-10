@@ -1,9 +1,9 @@
 name: Automatic version bumping
 
 on:
-  - push:
-      branches:
-        - develop
+  push:
+    branches:
+      - develop
 
 jobs:
   Bump-Version:
@@ -19,7 +19,7 @@ jobs:
         ./.github/bumpversion.sh
 
     - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tags: true
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        tags: true
