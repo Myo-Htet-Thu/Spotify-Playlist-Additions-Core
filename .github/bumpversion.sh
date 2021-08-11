@@ -18,4 +18,4 @@ case "$branch_name" in
         echo "Ignoring"; exit;;
 esac
 
-git push origin HEAD:develop
+git push origin HEAD:master

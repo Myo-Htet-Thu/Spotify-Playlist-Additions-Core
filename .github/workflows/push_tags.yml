@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - develop
-    tags-ignore:
-      - "*"
 
 jobs:
   Bump-Version:
