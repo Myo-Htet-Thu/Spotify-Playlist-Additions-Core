@@ -2,7 +2,7 @@ name: Automatic version bumping
 
 on:
   push:
-    tags-ignores:
+    tags-ignore:
       - '*'
     branches:
       - 'develop'
