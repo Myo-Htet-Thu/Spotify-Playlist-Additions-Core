@@ -3,7 +3,7 @@ name: Automatic version bumping
 on:
   push:
     tags-ignore:
-      - '*'
+      - '*.*.*'
     branches:
       - 'develop'
 
