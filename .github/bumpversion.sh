@@ -7,9 +7,9 @@ last_merged_branch=$(git log --merges -n 1)
 
 echo "Detected commit '$last_commit_msg'"
 
-if [ '$last_commit_msg' == *'Bump version'* ]
+if [[ "$last_commit_msg" == *"Bump version"* ]]
 then
-    echo "Version already bumped";
+    echo "Version already bumped. Ignoring";
     exit;
 fi
 
