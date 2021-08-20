@@ -1,13 +1,11 @@
-=======
-Credits
-=======
+# Credits
 
-Development Lead
-----------------
+
+## Development Lead
 
 * Patrick Roy Christie <patrick.christie.dev@gmail.com>
 
-Contributors
-------------
+## Contributors
+
 
 None yet. Why not be the first?

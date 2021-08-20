@@ -22,7 +22,7 @@ schedule: "every day"
 # allowed: True, False
 search: True
 
-pr_prefix: "[IGNORE]"
+pr_prefix: "[PATCH]"
 
 # Specify requirement files by hand, default is empty
 # default: empty
