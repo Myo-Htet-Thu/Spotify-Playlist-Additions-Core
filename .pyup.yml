@@ -22,6 +22,8 @@ schedule: "every day"
 # allowed: True, False
 search: True
 
+pr_prefix: "[IGNORE]"
+
 # Specify requirement files by hand, default is empty
 # default: empty
 # allowed: list
