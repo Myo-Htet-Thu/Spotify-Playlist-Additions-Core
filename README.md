@@ -1,6 +1,4 @@
-===============================
-Spotify Playlist Additions Core
-===============================
+# Spotify Playlist Additions Core
 
 
 [![pypi](https://img.shields.io/pypi/v/spotify_playlist_additions_core.svg)](https://pypi.python.org/pypi/spotify_playlist_additions_core/)
