@@ -13,4 +13,4 @@ mypy==0.910
 yapf==0.31.0
 build==0.6.1
 
-pytest
+pytest==6.2.4
