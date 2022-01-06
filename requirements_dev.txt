@@ -7,7 +7,7 @@ tox==3.24.5
 coverage==6.2
 twine==3.7.1
 mkdocs==1.2.3
-mkdocs-material==7.2.5
+mkdocs-material==8.1.4
 mkdocs-minify-plugin==0.4.0
 mypy==0.910
 yapf==0.31.0
